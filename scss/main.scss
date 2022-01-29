@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto Slab', serif !important;
+    background-image: url("../img/background.webp");
+    background-image: url("../img/memphis-mini.png");
+    background-image: url("../img/floor-tile.png");
+
+}
+
+.colored-text {
+    color: #E48257;
+}
+
+.font-weight-light {
+    font-weight: 300 !important;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.background {
+    background-image: url("../img/zigzag.png");
+}
+
+hr {
+    height: 2px !important;
+}
+
+.personnalised-padding  {
+    padding: 80px;
+}
+
+.personnalised-shadow {
+    -webkit-box-shadow: 0px 6px 12px 6px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 6px 12px 6px rgba(0,0,0,0.6);
+    box-shadow: 0px 6px 12px 6px rgba(0,0,0,0.6);
+}
+
+.border-radius {
+    -webkit-border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.border-radius-formation {
+    -webkit-border-radius: 0px 20px 20px 20px;
+    -moz-border-radius: 0px 20px 20px 20px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.border-radius-experience {
+    -webkit-border-radius: 20px 0px 20px 20px;
+    -moz-border-radius: 20px 0px 20px 20px;
+    border-radius: 20px 0px 20px 20px;
+}
+
+header {
+    height: 100vh;
+    background-image: url("../img/header2.jpeg");
+}
+
+.background-second {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#more-arrows {
+    width: 75px;
+    height: 65px;
+    
+    &:hover {
+        polygon {
+            fill: #FFF;
+            transition: all .2s ease-out;
+            &.arrow-bottom {
+            transform: translateY(-18px);
+            }
+            &.arrow-top {
+            transform: translateY(18px);
+            }
+        }
+    }
+}
+
+polygon {
+    fill: #FFF;
+    transition: all .2s ease-out;
+    
+    &.arrow-middle {
+        opacity: 0.75;
+    }
+
+    &.arrow-top {
+        opacity: 0.5
+    }
+}
+
+.nav-item {
+    transition: all ease-in-out .2s;
+    border: none;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 50%;
+    bottom:0;
+    background-color: #503a3a6b;
+    transition: all ease-in-out .2s;
+    }
+    
+.nav-item:hover::after {
+    width: 60%;
+    left: 20%;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #525050;
+
+    &:hover {
+        background: #949292;
+    }
+}
+
+.outlined-text {
+    background-color: #ffffffb2;
+    color: black;
+    font-weight: bold;
+    mix-blend-mode: screen;
+}
+
+.timeline-formation {
+    position: relative;
+    max-width: 100%;
+}
+
+.timeline-formation::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #E48257;
+    top: 0;
+    bottom: 0;
+    left: 80px;
+}
+
+.circle-timeline-formation::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: -25px;
+    background-color: #525050;
+    border: 3px solid #E48257;
+    top: 25px;
+    border-radius: 50%;
+}
+
+.timeline-experience {
+    position: relative;
+    max-width: 100%;
+}
+
+.timeline-experience::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #E48257;
+    top: 0;
+    bottom: 0;
+    right: 80px;
+}
+
+.circle-timeline-experience::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: -25px;
+    background-color: #525050;
+    border: 3px solid #E48257;
+    top: 25px;
+    border-radius: 50%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    background-color: #0000004d;
+    transform: rotateY(180deg);
+
+    p {
+        padding-top: 100px;
+    }
+}
+
+#id-card {
+    width: 600px;
+    height: 300px;
+    border: solid 2px #0000004d;
+    border-radius: 20px;
+}
