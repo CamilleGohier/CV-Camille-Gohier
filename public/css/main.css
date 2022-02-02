@@ -235,4 +235,14 @@ polygon.arrow-top {
   border-radius: 20px;
 }
 
+@media only screen and (max-width: 700px) {
+  #id-card {
+    width: 450px;
+  }
+
+  .img-media {
+    height: 150px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
