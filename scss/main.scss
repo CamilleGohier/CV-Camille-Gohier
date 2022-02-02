@@ -120,8 +120,8 @@ polygon {
     bottom:0;
     background-color: #503a3a6b;
     transition: all ease-in-out .2s;
-    }
-    
+}
+
 .nav-item:hover::after {
     width: 60%;
     left: 20%;
@@ -244,3 +244,13 @@ polygon {
     border: solid 2px #0000004d;
     border-radius: 20px;
 }
+
+@media only screen and (max-width: 700px) {
+    #id-card {
+        width: 450px;
+    }
+
+    .img-media {
+        height: 150px;
+    }
+  }
